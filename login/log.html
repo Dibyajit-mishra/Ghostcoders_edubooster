@@ -1,0 +1,93 @@
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+
+<!--<div class="hero">-->
+    <div class="form-box">
+        <form>
+            <h1 class="a11y-hidden">Login Form</h1>
+            <figure aria-hidden="true">
+            <div class="person-body"></div>
+            <div class="neck skin"></div>
+            <div class="head skin">
+                <div class="eyes"></div>
+                <div class="mouth"></div>
+            </div>
+            <div class="hair"></div>
+            <div class="ears"></div>
+            <div class="shirt-1"></div>
+            <div class="shirt-2"></div>
+        </figure>
+        </form>
+
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="register()">Forgot</button>
+        </div>
+
+            <form method="#" id="login" class="input-group" autocomplete="off">
+                <h1 class="a11y-hidden">Login Form</h1>
+                <div>
+                <label>
+                    <input type="name" class="text" name="email" placeholder="Enter your name" tabindex="1" required />
+                    <span class="required">Name</span>
+                </label>
+                </div>
+                <div>
+                <label>
+                    <input type="number" class="text" name="Registration number" placeholder="Enter registration number" tabindex="1" required />
+                    <span class="required">Registration Number</span>
+                </label>
+                </div>
+                <div class="tooltip">
+                    <label >
+                        <input type="text" class="text" name="password" placeholder="Password" tabindex="2" required />
+                        <span class="tooltiptext">
+                        your name first 4 alphabet+ @ +year <br>eg.:wxyz@2022   </span>
+                        <span class="required" >Password</span>
+                        </label>
+                </div>
+                <!-- <input type="checkbox" name="show-password" class="show-password a11y-hidden" id="show-password" tabindex="2" required />
+                <label class="label-show-password" for="show-password">
+                    <span>Show Password</span>
+                </label>  -->
+<input type="submit" value="Log In" />
+<div class="email">
+</div>   
+
+</form>
+<form id="register" class="input-group">
+    
+    <label>
+        <input type="email" class="" name="email" placeholder="Enter Registered Email" tabindex="" required />
+        <span class="required">Email</span>
+    </label>
+    <input type="submit" value="Confirm" />
+    </form>    
+    </div>
+
+    <script>
+        var x= document.getElementById("login");
+        var y= document.getElementById("register");
+        var z= document.getElementById("btn");
+        function register(){
+            x.style.left = "-500px";
+            y.style.left="7px";
+            z.style.left = "110px";
+        }
+        function login(){
+            x.style.left = "8px";
+            y.style.left="300px";
+            z.style.left= "0px";
+        }
+
+    </script>
+</body>
+</html>
