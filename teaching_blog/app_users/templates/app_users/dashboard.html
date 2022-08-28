@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% extends 'base.html'  %}
+{% load static %}
+<html>
+<head>
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+	{% block content %}
+	<div style = "margin-top: 100px; margin-bottom: 100px">
+	<a name="" id="" class="btn btn-primary" href="#" role="button">doubt box</a>
+	<a name="" id="" class="btn btn-primary" href="{% url 'add' %}" role="button">assignment box</a>
+	<a name="" id="" class="btn btn-primary" href="#" role="button">online class</a>
+	<a name="" id="" class="btn btn-primary" href="#" role="button">Recordings</a>
+	</div>
+	{%endblock%}
+</body>
+</html>
+				
